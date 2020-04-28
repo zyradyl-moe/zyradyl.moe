@@ -1,0 +1,1 @@
+var b = document.body;onload = function() {setTimeout(function(){b.className = b.className.replace(/\bis-loading\b/,'is-playing');setTimeout(function() {b.className = b.className.replace(/\bis-playing\b/,'is-ready')}, 3000);}, 100)};if (navigator.userAgent.match(/(MSIE|rv:11\.0)/))b.className += ' is-ie';
