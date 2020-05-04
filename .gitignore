@@ -59,5 +59,3 @@ Gemfile.lock
 node_modules
 bower_components
 .bundle
-
-public/
