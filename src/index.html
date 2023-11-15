@@ -1,53 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="images/icons/browserconfig.xml">
+    <meta name="msapplication-config" content="msc/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
 
     <title>zyradyl.moe</title>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
-    <link rel="manifest" href="images/icons/site.webmanifest">
-    <link rel="mask-icon" href="images/icons/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="images/icons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicon-16x16.png">
+    <link rel="manifest" href="misc/site.webmanifest">
+    <link rel="mask-icon" href="img/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/ico/favicon.ico">
 
-    <link rel="stylesheet" href="css/splash.css">
-    <!--
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    -->
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:700|Raleway:100,901" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/splash.css" type="text/css">
+    <link rel="stylesheet" href="vendor/css/fontawesome.css" type="text/css">
+    <link rel="stylesheet" href="vendor/css/brands.css" type="text/css">
+    <link rel="stylesheet" href="vendor/css/solid.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,300"  type="text/css">
 
-    <script src="https://kit.fontawesome.com/6d3097ce04.js" crossorigin="anonymous"></script>
+    <script>document.documentElement.classList.remove("no-js");</script>
+    <script src="js/modernizr.js"></script>
   </head>
 
-  <body class="is-loading">
+  <body>
     <div id="wrapper">
       <div id="main">
         <div class="inner">
           <div class="image" id="image01">
-            <img src="images/icon.png" alt="Logo" />
+            <img src="img/logo.png" alt="Logo" />
           </div>
             <h1 id="text01">Zyradyl.moe</h1>
-            <p id="text02">Reinitialization in progress...</p>
+            <span class="cursor">
+              <p id="text02">Awaiting user input...</p>
+            </span>
             <hr id="divider01" />
             <ul class="icons" id="icons02">
-              <li><a class="fas fa-user-alt n06" href="https://about.zyradyl.moe" title="about"><span class="label">about</span></a></li>
-              <li><a class="fa fa-archive n01" href="https://archive.zyradyl.moe" title="archive"><span class="label">archive</span></a></li>
-              <li><a class="fa fa-book n02" href="https://blog.zyradyl.moe" title="blog"><span class="label">blog</span></a></li>
-              <li><a class="fas fa-project-diagram n03" href="https://projects.zyradyl.moe" title="projects"><span class="label">projects</span></a></li>
-              <li><a class="fab fa-discord n04" href="https://discord.gg/mA8PMGV" title="join discord"><span class="label">discord</span></a></li>
-              <li><a class="fab fa-gitlab n05" href="https://gitlab.com/zyradyl-moe" title="source"><span class="label">source</span></a></li>
+              <li><a class="fa-solid fa-user-alt n06" href="https://about.zyradyl.moe" title="about"><span class="label">about</span></a></li>
+              <li><a class="fa-solid fa-archive n01" href="https://archive.zyradyl.moe" title="archive"><span class="label">archive</span></a></li>
+              <li><a class="fa-solid fa-book n02" href="https://blog.zyradyl.moe" title="blog"><span class="label">blog</span></a></li>
+              <li><a class="fa-solid fa-server n04" href="https://maple.zyradyl.moe" title="maple"><span class="label">maple</span></a></li>
+              <li><a class="fa-solid fa-project-diagram n03" href="https://projects.zyradyl.moe" title="projects"><span class="label">projects</span></a></li>
+              <li><a class="fa-brands fa-github n05" href="https://github.com/zyradyl-moe" title="source"><span class="label">source</span></a></li>
             </ul>
         </div>
       </div>
     </div>
-    <script>var b = document.body;onload = function() {setTimeout(function(){b.className = b.className.replace(/\bis-loading\b/,'is-playing');setTimeout(function() {b.className = b.className.replace(/\bis-playing\b/,'is-ready')}, 3000);}, 100)};if (navigator.userAgent.match(/(MSIE|rv:11\.0)/))b.className += ' is-ie';
-    </script>
   </body>
 </html>
